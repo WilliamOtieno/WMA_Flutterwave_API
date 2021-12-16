@@ -27,7 +27,7 @@ def get_payment_redirect_uri(user):
         "tx_ref": f"{get_random_ref()}",
         "amount": "2000",
         "currency": "KES",
-        "redirect_url": "http://127.0.0.1:8000/payment-status",
+        "redirect_url": "https://wma-v3mlj5cyna-uc.a.run.app/payment-status",
         "payment_options": "mpesa",
         "customer": {
             "email": f"{user.email}",
