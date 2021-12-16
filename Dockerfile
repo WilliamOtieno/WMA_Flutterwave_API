@@ -12,6 +12,7 @@ ENV PYTHONUNBUFFERED 1
 ENV PORT 8000
 
 RUN rm -rf env
+RUN rm -rf WMA/.env
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 RUN python manage.py makemigrations
