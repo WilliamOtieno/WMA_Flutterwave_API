@@ -148,4 +148,5 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CRONJOBS = [
     ('*/2 * * * *', 'payments.cron.validate_status'),
+    ('*/5 * * * *', 'payments.cron.check_expired_subscription'),
 ]
